@@ -1,0 +1,359 @@
+@media (max-width: 450px) {
+    body{
+        overflow-x: hidden;
+    }
+    .Maindivlogo{
+        display: none;
+      }
+      .Mobileviewlogo{
+        display: block;
+        width: 100%;
+      }
+
+    .navbarMobileView-container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 16px;
+        background-color: white;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+      }
+      
+      .navbarMobileView-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .navbarMobileView-left {
+        display: flex;
+        align-items: center;
+      }
+      
+      .navbarMobileView-logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      
+      .navbarMobileView-text {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .navbarMobileView-name, .navbarMobileView-subtext {
+        font-size: 16px;
+      }
+      
+      .navbarMobileView-right {
+        display: flex;
+        align-items: center;
+      }
+      
+      .navbarMobileView-hamburger {
+        font-size: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .navbarMobileView-navbar {
+        margin-top: 20px;
+      }
+      
+      .navbarMobileView-navbar ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .navbarMobileView-navbar li {
+        padding: 10px 0;
+        border-bottom: 1px solid #7853f3;
+        /* box-shadow: 0px 1px 2px 0px #7853F3; */
+      }
+      .content{
+        box-shadow: none;
+        mask-image: none;
+      }
+
+      .moving-text{
+        display: none;
+      }
+      .content-image {
+        margin-left: 15%;
+        width: 250px;
+        height: 250px;
+      }
+      .content-image:hover{
+        box-shadow: none;
+      }
+
+      .image-container{
+        margin-top: 5%;
+        display: flex;
+        height: 250px;
+
+      }
+      .Figma-image{
+        margin-left: -20%;
+      }
+      .third-div-text{
+        font-size: 18px;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 30px;
+        line-height: 30px;
+      }
+      .third-div-text-span{
+        margin-left: 30px;
+      }
+
+      .Work_Together {
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px; 
+         padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 14px;
+        border-radius: 20px;
+        color: black;
+        border: 2px solid #A17FE9;
+        background-color: white;
+        margin-bottom: 15%;
+        font-family: 'Poppins';
+        font-weight: 600;
+
+    }
+
+    /* Let's Start the css of about page */
+    .Bottom_navbar{
+        display: none;
+    }
+    .AboutPage{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 95%;
+        margin-top: 40%;
+        line-height: 60px;
+        margin-bottom: 60%;
+    }
+    .AboutPage h2{
+        font-size: 28px;    
+    }
+    .AboutPage h1{
+        font-size: 24px;
+        margin-top: 10%;
+        
+    }
+
+
+    /* about page css end */
+    /* work gallery css start */
+    #Work_gallery{
+        height: 120vh;
+    }
+    .title{
+        font-size: 76px;
+        margin-top: 40%;
+    }
+    .subtitle{
+        font-size: 52px;
+        margin-bottom: 40%;
+    }
+    .image-scroller img{
+        height: 300px;
+    }
+
+
+    /* work gallery css end */
+
+
+    /* project css start */
+
+    .project_header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .project-top-left{
+        text-align: center;
+    }
+    .project-top-right{
+        text-align: center;
+        line-height: 30px;
+    }
+    .project-image-row{
+        width: 100%;
+        flex-direction: column;
+    }
+    .project-image-row img{
+        width: 80%;
+        margin-top: 20px;
+    }
+    /* project css end */
+
+    /* services page css start */
+
+    #services-container{
+        flex-direction: column;
+    }
+    .services-right{
+        padding-top: 40%;
+    }
+    .services-left{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .services-row{
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .flip-card{
+        margin-bottom: 50px;
+    }
+
+    /* services page css end */
+
+    /* process page css start */
+    #process-page{
+        padding: 0;
+    }
+
+    .process-title{
+        line-height: 60px;
+        font-size: 42px;
+    }
+    .process-image-title{
+        margin-top: 56%;
+        flex-direction: column;
+        margin-left: 0;
+        justify-content: start;
+        width: 20%;
+        gap: 10%;
+        margin-left: 20px;
+
+        
+    }
+    .process-subtitle{
+        font-size: 32px;
+    }
+    .process-main-image-container{
+        width:80%;
+        display: flex;
+
+    }
+    .process-image-title-text{
+        font-size: 20px;
+    }
+    .process-image-title-text-2{
+        font-size: 14px;
+    }
+
+    .process_main_part{
+        display: flex;
+        width: 100%;
+    }
+    .process-main-image{
+        rotate:270deg;
+        height: 850px;
+        width: 200%;
+        margin-left: -70%;
+
+    }
+    .process-bottom-images{
+        flex-direction: column;
+        justify-content: start;
+        bottom: 56%;
+        padding-left: 28%;
+        gap: 130%;   
+    }
+    .process-image-bottom-title{
+        flex-direction: column;
+        width: 40%;
+        margin-left: -75%;
+        justify-content: start;
+        margin-top: 80%;
+        gap: 5%;
+    }
+    .process-top-images{
+        padding-left: 0;
+        flex-direction: column;
+        margin-left: 5%;
+        gap: 130%;
+        top :23%;
+    }
+    .process-top-images img, .process-bottom-images img{
+        height: 80px;
+        width: 80px;
+    }
+
+    /* process page css end */
+
+    /* Contact Page css start */
+    .contact-container{
+        margin-top: 50%;
+    }
+    .contact-title{
+        font-size: 32px;
+    }
+    .contact-heading{
+        font-size: 48px;
+    }
+    .contact-text{
+        font-family: 18px;
+    }
+    .contact-button{
+        margin-bottom: 40%;
+    }
+    .process-image-bottom-title-text{
+        font-size: 20px;
+    }
+    .process-image-bottom-title-text-2{
+        font-size: 14px;
+    }
+
+    /* Contact page css end */
+
+    /* footer page css start */
+    .footer-container{
+        flex-direction: column;
+        height: 100%;
+        gap: 80px;
+        margin-bottom: 30%;
+    }
+
+    /* footer page css end */
+    /* breif contact page */
+
+    .contactpage-content{
+        flex-direction: column;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .contactpage-right-section{
+        width:100%;
+    }
+    .contactpage-form-group{
+        flex-direction: column;
+    }
+    .contactpage-form-group input[type="url"]{
+        width: 100%;
+    }
+    .contactpage-left-section{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+    .contactpage-form-group-1{
+        width: 100%;
+    }
+    
+}

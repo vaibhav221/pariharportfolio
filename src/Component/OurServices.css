@@ -1,0 +1,132 @@
+
+  
+
+  /* .services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    z-index: 0;
+    width: 100%;
+  } */
+
+
+  
+  
+  .services-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .services-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;  
+    margin-left: 10%;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 280px;
+    perspective: 1000px;
+    margin-left: 3%;
+
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; 
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    color: black;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 12px 0px #7853F3;
+    border-radius: 20px;
+  }
+  
+
+  
+  .flip-card-back {
+
+    transform: rotateY(180deg);
+    background: linear-gradient(to bottom, #B192E5, #7C8DF5);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+  #services-card-text-1{
+    background:url('./1_card.svg'), linear-gradient(to bottom, #B192E5, #7C8DF5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    border: 2px solid white;
+    border-radius: 20px;
+    align-items: center;
+  }
+  #services-card-text-2{
+    background:url('./2_card.svg'), linear-gradient(to bottom, #B192E5, #7C8DF5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    border: 2px solid white;
+    border-radius: 20px;
+    align-items: center;
+  }
+  #services-card-text-3{
+    background:url('./3_card.svg'), linear-gradient(to bottom, #B192E5, #7C8DF5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    border: 2px solid white;
+    border-radius: 20px;
+    align-items: center;
+  }
+  #services-card-text-4{
+    background:url('./4_card.svg'), linear-gradient(to bottom, #B192E5, #7C8DF5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    border: 2px solid white;
+    border-radius: 20px;
+    align-items: center;
+    
+    
+  }
+
+  
