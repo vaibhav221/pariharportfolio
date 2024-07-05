@@ -42,7 +42,7 @@ const Ourservices = () => {
                 <p className="services-card-text-2">Post <br/> Design</p>
               </div>
               <div className="flip-card-back services-card-2">
-                <p className="services-card-text"id="services-card-text-2"><p>Engage Your Audience With Stuning Visuals</p></p>
+                <p className="services-card-text"id="services-card-text-2"><br/><br/><br/><p>Engage Your Audience With Stuning Visuals</p></p>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Ourservices = () => {
                 <p className="services-card-text-2">Personalized <br />Website</p>
               </div>
               <div className="flip-card-back services-card-2">
-                <p className="services-card-text"id="services-card-text-3"><p>Cutom Crafted<br/> Website That Embody <br/>Your Brand, And Engage <br/>Your Audience</p></p>
+                <p className="services-card-text"id="services-card-text-3"><br/><br/><p>Cutom Crafted<br/> Website That Embody <br/>Your Brand, And Engage <br/>Your Audience</p></p>
               </div>
             </div>
           </div>
@@ -68,12 +68,12 @@ const Ourservices = () => {
                 <p className="services-card-text-2">Design <br/> Subscription</p>
               </div>
               <div className="flip-card-back services-card-2">
-                <p className="services-card-text" id="services-card-text-4">" Struggling  To find Realiable <br/>Freelancers? Partners With Me For Consistent, High <br/> Design Work-Flexible And <br/>Easy To Start Or Cancel <br/>Anytime. "</p>
+                <p className="services-card-text" id="services-card-text-4"><br/>" Struggling  To find Realiable <br/>Freelancers? Partners With Me For Consistent, High <br/> Design Work-Flexible And <br/>Easy To Start Or Cancel <br/>Anytime. "</p>
               </div>
             </div>
           </div>
         </div>
-        {/* <div className='Services-navbar'><Navbar/></div>  */}
+        <div className='Services-navbar'><Navbar/></div> 
       </div>
       
     </div>

@@ -81,7 +81,7 @@ const Contact = () => {
 
   return (
     <div id="contactpage-container">
-            <div className='Maindivlogo'><Logo/></div>
+      <div className='Maindivlogo'><Logo/></div>
       <div className='Mobileviewlogo'><Logomobileview/></div>
       <div className="contactpageanimation-container">
         <div className="contactpageanimation-div1">

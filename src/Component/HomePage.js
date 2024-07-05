@@ -37,7 +37,7 @@ function HomePage() {
         </div>
         <div><button className='Work_Together'>Let's Work Together</button></div>
       
-      {/* <div className='Bottom_navbar'><Navbar/></div> */}
+      <div className='Bottom_navbar'><Navbar/></div>
       </div>
 
   );

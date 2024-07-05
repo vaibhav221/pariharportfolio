@@ -23,7 +23,7 @@ const Maincomponent = () => {
           card.style.opacity = 1;
           card.style.zIndex = cards.length - index; // Ensure the card stacks on top
         } else {
-          card.style.opacity = 0;
+          card.style.opacity = 0.1;
           card.style.zIndex = 0; // Reset z-index when the card is out of view
         }
       });
@@ -41,7 +41,7 @@ const Maincomponent = () => {
       };
     };
 
-    const debouncedHandleScroll = debounce(handleScroll, 100);
+    const debouncedHandleScroll = debounce(handleScroll, 200);
 
     window.addEventListener('scroll', debouncedHandleScroll);
     handleScroll(); // Call handleScroll initially to set initial opacity based on initial scroll position
@@ -66,3 +66,4 @@ const Maincomponent = () => {
 };
 
 export default Maincomponent;
+

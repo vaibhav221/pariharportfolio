@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from 'react';
-import './All.css'; 
-import Navbar from './Navbar.js';
+import React, { useRef, useState, useEffect } from 'react';
+import './All.css'; // Import your CSS for styling
+import Navbar from './Navbar';
 import img1 from './1_Work_gallery.svg';
 import img2 from './2_Work_gallery.svg';
 import img3 from './3_Work_gallery.svg';
@@ -12,61 +12,93 @@ import img8 from './5_Work_gallery (7).svg';
 import img9 from './5_Work_gallery (8).svg';
 import img10 from './5_Work_gallery (9).svg';
 
+const images = [    
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10
+];
+
 const Workgallery = () => {
-    const scrollerRef = useRef(null);
-    let intervalId = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const carouselRef = useRef(null);
+  const scrollAmount = 400; // Adjust scroll amount as needed
+  const intervalTime = 3000; // Automatic scroll interval (3 seconds)
 
-    const startScrolling = () => {
-        const scroller = scrollerRef.current;
-        intervalId.current = setInterval(() => {
-            scroller.scrollLeft += 1;
-            if (scroller.scrollLeft >= scroller.scrollWidth - scroller.clientWidth-1) {
-                scroller.scrollLeft = 0;
-            }
-        }, 20);
-    };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, intervalTime);
 
-    const stopScrolling = () => {
-        clearInterval(intervalId.current);
-    };
+    return () => clearInterval(interval);
+  }, []);
 
-    useEffect(() => {
-        startScrolling();
-        return () => clearInterval(intervalId.current);
-    }, []);
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    scrollCarousel(scrollAmount);
+  };
 
-    return (
-        <div id="Work_gallery">
-            {/* <div className='Bottom_navbar'><Navbar/></div> */}
-            <div className="gallery-container">
-                <h1 className="title">Work</h1>
-                <p className="subtitle">Gallery</p>
-                <div className="image-scroller" ref={scrollerRef}>
-                    <img src={img1} alt="Placeholder 1" />
-                    <img src={img2} alt="Placeholder 2" />
-                    <img src={img3} alt="Placeholder 3" />
-                    <img src={img4} alt="Placeholder 4" />
-                    <img src={img5} alt="Placeholder 5" />
-                    <img src={img6} alt="Placeholder 6" />
-                    <img src={img7} alt="Placeholder 7" />
-                    <img src={img8} alt="Placeholder 8" />
-                    <img src={img9} alt="Placeholder 9" />
-                    <img src={img10} alt="Placeholder 10" />
-                </div>
-                {/* <button className="control-button" onMouseDown={stopScrolling} onMouseUp={startScrolling} onTouchStart={stopScrolling} onTouchEnd={startScrolling}>
-                    Stop
-                </button> */}
-                <div className='Control-buttons'>
-                <button className="control-button" id="Control-left-button"onClick={() => scrollerRef.current.scrollLeft -= 500}>
-                    ‹
-                </button><br/>
-                <button className="control-button"id="Control-right-button" onClick={() => scrollerRef.current.scrollLeft += 500}>
-                    ›
-                </button>
-                </div>
-            </div>
-        </div>
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
+    scrollCarousel(-scrollAmount);
+  };
+
+  const scrollCarousel = (amount) => {
+    if (carouselRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+      let newPosition = scrollLeft + amount;
+
+      if (newPosition > scrollWidth - clientWidth) {
+        newPosition = 0;
+      } else if (newPosition < 0) {
+        newPosition = scrollWidth - clientWidth;
+      }
+
+      carouselRef.current.scrollTo({
+        left: newPosition,
+        behavior: 'smooth'
+      });
+
+      // Determine the new index after scrolling
+      const newIndex = Math.round(newPosition / clientWidth);
+      setCurrentIndex(newIndex);
+    }
+  };
+
+  return (
+    <div id="Work_gallery" className="work-gallery">
+            <div className='Bottom_navbar' id="Navbar_Process"><Navbar/></div>
+      <div className="gallery-container">
+        <h1 className="title">Work</h1>
+        <p className="subtitle">Gallery</p>
+        <div className="carousel" ref={carouselRef}>
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
+            >
+              <img src={image} alt={`Slide ${index}`} />
+            </div>
+          ))}
+        </div>
+        <button className="control-button prev" onClick={handlePrev}>
+          ‹ 
+        </button>
+        <button className="control-button next" onClick={handleNext}>
+           ›
+        </button>
+      </div>
+  
+    </div>
+  );
 };
 
 export default Workgallery;

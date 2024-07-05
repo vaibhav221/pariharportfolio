@@ -97,6 +97,8 @@
     border: 2px solid white;
     border-radius: 20px;
     align-items: center;
+    justify-content: center;
+    
   }
   #services-card-text-3{
     background:url('./3_card.svg'), linear-gradient(to bottom, #B192E5, #7C8DF5);

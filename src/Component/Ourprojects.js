@@ -1,6 +1,7 @@
 import React from 'react';
 import './All.css';
 import Navbar from './Navbar';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Ourprojects = () => {
   return (
@@ -16,10 +17,10 @@ const Ourprojects = () => {
     </div>
     </div>
     <div className="project-image-row">
-      <img src="https://via.placeholder.com/400x300" alt="Placeholder 1" />
-      <img src="https://via.placeholder.com/400x300" alt="Placeholder 2" />
+      <Link smooth to="/Project1_Page"><img src="https://via.placeholder.com/400x300" alt="Placeholder 1" /></Link>
+      <Link smooth to="/Project2_Page"><img src="https://via.placeholder.com/400x300" alt="Placeholder 2" /></Link>
     </div>
-    {/* <div className='Bottom_navbar'><Navbar/></div> */}
+    <div className='Bottom_navbar'><Navbar/></div>
   </div>
 );
 }

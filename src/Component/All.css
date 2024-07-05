@@ -305,7 +305,9 @@
   height: 50px;
 }
 
-
+#Navbar_Process{
+  margin-left: 0%;
+}
 
 /*Navbar css end */
 
@@ -373,92 +375,161 @@
 
 /* About Page css end */
 /* Work gallery css start */
-#Work_gallery {
-  text-align: center;
-  height: 100vh;  
-  display: flex;
-  justify-content: center;
-  line-height: 10px;
-  padding-top: 5%;
-  font-family: 'Poppins';
-  background: url('./linnneeee.svg'), linear-gradient(black, #666666);
-  width: 100%;
-  padding-bottom: 10%;
-}
+/* All.css */
 
-.gallery-container {
-  text-align: center;
-  color: white;
-  overflow-x: hidden;
+/* Body styles if needed */
+
+
+/* Container styles */
+
+/* Work gallery css start */
+/* #Work_gallery {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0; 
+    width:100%;
+  }  */
+  #Work_gallery {
+    text-align: center;
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    line-height: 10px;
+    padding-top: 5%;
+    font-family: 'Poppins';
+    background: url('./linnneeee.svg'), linear-gradient(black, #666666);
+    width: 100%;
+    padding-bottom: 10%;
+  }
+
+  
+  .title {
+    font-size: 96px;
+  }
+  
+  .subtitle {
+    color: #7853F3;
+    font-size: 64px;
+    margin-left: 10%;
+    padding-bottom: 4%;
+  }
+  
+  .gallery-container {
+    max-width: 100%; /* Adjust max-width as needed */
+    margin: 0 auto;
+    position: relative;
+    color: white;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 40%;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item img {
+    width: 50%;
+    height: 500px;
+  }
+  
+  .control-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    z-index: 2;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+
+/* All.css */
+
+/* All.css */
+
+/* .gallery-container {
   position: relative;
+  overflow: hidden;
+  width: 100%; 
+} */
+/* All.css */
+
+/* All.css */
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
 }
 
-.title {
-  font-size: 96px;
-}
-
-.subtitle {
-  color: #7853F3;
-  font-size: 64px;
-  margin-left: 10%;
-  padding-bottom: 4%;
-}
-
-.image-scroller {
+.carousel {
   display: flex;
-  white-space: nowrap;
-  overflow-x: auto;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  transition: transform 0.5s ease;
 }
 
-.image-scroller::-webkit-scrollbar { /* For Chrome, Safari, and Opera */
-  display: none;
+.carousel-slide {
+  min-width: 100%;
+  flex: 0 0 auto;
+  transition: opacity 0.5s ease;
 }
 
-.image-scroller img {
-  margin: 0 30px;
-  height: 400px;
+.carousel-slide img {
+  width: 400px;
+  height: auto;
+  display: block;
 }
-.Control-buttons{
-  justify-content: space-between;
+
+.active {
+  opacity: 1;
 }
 
 .control-button {
-  position: absolute; 
-  top: 50%;
-  transform: translatex(3900%);
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.5);
   border: none;
+  padding: 10px;
   cursor: pointer;
   z-index: 2;
-  padding: 10px;
-  font-size: 50px;
-  text-align: center;
-  
-  
+  font-size: 40px;
 }
-/* #Control-left-button{
-  left:0;
-} 
-#Control-right-button{
-  right:0;
-} */
+
 .control-button:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 
-.control-button:nth-child(1) {
-  left: -93%;
-} 
-
-.control-button:nth-child(3) {
+.control-button:first-of-type {
   left: 10px;
 }
 
-.control-button:nth-child(4) {
+.control-button:last-of-type {
   right: 10px;
 }
+
 
 
 /* Work gallery css end */
@@ -526,7 +597,7 @@
 }
 
 .project-image-row img {
-  width: 48%;
+  width: 90%;
   border-radius: 20px;
   height: 600px;
 }
@@ -547,7 +618,7 @@
   
   padding-right: 8%;
   padding-top: 7%;
-  padding-bottom: 7%;
+  padding-bottom: 3%;
   width: 90%;
 }
 
@@ -932,7 +1003,7 @@
 /* Full contact page  css start*/
 #contactpage-container {
   font-family: 'Poppins';
-  padding-top: 10%; 
+  /* padding-top: 10%;  */
   padding-bottom: 10%;
 
 }
@@ -1123,3 +1194,22 @@
 
 
 /* full contact page css end */
+
+
+/* Project 1 Page css start */
+#Project2_Page{
+  font-size: 50px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#Project1_Page{
+  font-size: 50px;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

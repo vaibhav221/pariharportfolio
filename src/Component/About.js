@@ -15,9 +15,9 @@ function About() {
           <img src={arrow} className="arrow" alt="Logo" />
           </div>
       </div>
-    {/* <div className='Bottom_navbar'><Navbar/></div> */}
+    <div className='Bottom_navbar'><Navbar/></div>
     </div>
-  )
+  ) 
 }
 
 export default About

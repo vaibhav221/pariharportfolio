@@ -37,7 +37,7 @@ const Process = () => {
       </div>
  
       </div>
-      {/* <div className='Bottom_navbar'><Navbar/></div> */}
+      <div className='Bottom_navbar' id="Navbar_Process"><Navbar/></div>
     </div>
   );
 };
