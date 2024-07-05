@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pariharportfolio/static/css/main.76d37be6.css",
-    "main.js": "/pariharportfolio/static/js/main.ee2b93a4.js",
+    "main.css": "/pariharportfolio/static/css/main.3b706f2a.css",
+    "main.js": "/pariharportfolio/static/js/main.3b6cfab4.js",
     "static/js/453.f93e9c00.chunk.js": "/pariharportfolio/static/js/453.f93e9c00.chunk.js",
     "static/media/social-media.gif": "/pariharportfolio/static/media/social-media.dddacb8dbec2f607bd35.gif",
     "static/media/Vaibhav.svg": "/pariharportfolio/static/media/Vaibhav.6f91924a1433f943de026f3f2b82f1e6.svg",
@@ -45,12 +45,12 @@
     "index.html": "/pariharportfolio/index.html",
     "static/media/Arrow1.svg": "/pariharportfolio/static/media/Arrow1.801973b90cbf9afa2eec5613a2d44e15.svg",
     "static/media/._BlackMango-ExtraBold.ttf": "/pariharportfolio/static/media/._BlackMango-ExtraBold.64f7b1f723ed694e1a1a.ttf",
-    "main.76d37be6.css.map": "/pariharportfolio/static/css/main.76d37be6.css.map",
-    "main.ee2b93a4.js.map": "/pariharportfolio/static/js/main.ee2b93a4.js.map",
+    "main.3b706f2a.css.map": "/pariharportfolio/static/css/main.3b706f2a.css.map",
+    "main.3b6cfab4.js.map": "/pariharportfolio/static/js/main.3b6cfab4.js.map",
     "453.f93e9c00.chunk.js.map": "/pariharportfolio/static/js/453.f93e9c00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76d37be6.css",
-    "static/js/main.ee2b93a4.js"
+    "static/css/main.3b706f2a.css",
+    "static/js/main.3b6cfab4.js"
   ]
 }
