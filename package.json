@@ -1,5 +1,5 @@
 {
-  "homepage": "https://VaibhavPariharDesigns.github.io/pariharportfolio",
+  "homepage": "https://VaibhavPariharDesigns.github.io/portfolioparihar",
   "name": "pariharportfolio",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +10,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^13.4.0",  
     "@testing-library/user-event": "^13.5.0",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
